@@ -1,5 +1,5 @@
 {
-	"name": "remixPluginMngr",
+	"name": "remixpluginmngr",
 	"displayName": "remixPluginMngr",
 	"description": "Remix Plugin Manager for VSCode",
 	"version": "0.0.1",
@@ -10,14 +10,34 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onView:RemiXPluginMngr"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [{
-			"command": "extension.helloWorld",
-			"title": "Hello World"
-		}]
+		"commands": [
+			{
+				"command": "extension.helloWorld",
+				"title": "Hello World"
+			}
+		],
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "remixpluginmngr",
+					"title": "Remix Plugin Manager",
+					"icon": "assets/remiIcon.svg"
+				}
+			]
+		},
+		"views": {
+			"remixpluginmngr": [
+				{
+					"id": "RemiXPluginMngr",
+					"name": "Remix Plugin Manager",
+					"when": "explorer"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
@@ -31,10 +51,14 @@
 		"@types/mocha": "^5.2.6",
 		"@types/node": "^10.12.21",
 		"@types/vscode": "^1.36.0",
+		"eslint-config-airbnb": "^17.1.1",
+		"eslint-config-prettier": "^6.0.0",
+		"eslint-plugin-prettier": "^3.1.0",
 		"glob": "^7.1.4",
 		"mocha": "^6.1.4",
-		"typescript": "^3.3.1",
+		"prettier": "^1.18.2",
 		"tslint": "^5.12.1",
+		"typescript": "^3.3.1",
 		"vscode-test": "^1.0.0-next.0"
 	}
 }
