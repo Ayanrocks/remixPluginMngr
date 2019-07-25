@@ -23,18 +23,17 @@
 		"viewsContainers": {
 			"activitybar": [
 				{
-					"id": "remixpluginmngr",
-					"title": "Remix Plugin Manager",
-					"icon": "assets/remiIcon.svg"
+					"id": "remix-plugin-mngr",
+					"title": "Remix Plugin manager",
+					"icon": "assets/remixIcon.svg"
 				}
 			]
 		},
 		"views": {
-			"remixpluginmngr": [
+			"remix-plugin-mngr": [
 				{
-					"id": "RemiXPluginMngr",
-					"name": "Remix Plugin Manager",
-					"when": "explorer"
+					"id": "remixPluginMngr",
+					"name": "Plugins"
 				}
 			]
 		}
