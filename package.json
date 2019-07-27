@@ -50,6 +50,30 @@
 					"name": "Plugins"
 				}
 			]
+		},
+		"menus": {
+			"view/title": [
+				{
+					"command": "remixPluginMngr.refreshEntry",
+					"when": "view == remixPluginMngr",
+					"group": "navigation"
+				},
+				{
+					"command": "remixPluginMngr.addEntry",
+					"when": "view == remixPluginMngr"
+				}
+			],
+			"view/item/context": [
+				{
+					"command": "remixPluginMngr.editEntry",
+					"when": "view == remixPluginMngr && viewItem == dependency",
+					"group": "inline"
+				},
+				{
+					"command": "remixPluginMngr.deleteEntry",
+					"when": "view == remixPluginMngr && viewItem == dependency"
+				}
+			]
 		}
 	},
 	"scripts": {
