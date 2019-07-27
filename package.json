@@ -3,6 +3,7 @@
 	"displayName": "remixPluginMngr",
 	"description": "Remix Plugin Manager for VSCode",
 	"version": "0.0.1",
+	"publisher": "mathcody",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
@@ -16,8 +17,21 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"command": "remixPluginMngr.refreshEntry",
+				"title": "Refresh",
+				"icon": "assets/reload.svg"
+			},
+			{
+				"command": "remixPluginMngr.addEntry",
+				"title": "Add"
+			},
+			{
+				"command": "remixPluginMngr.editEntry",
+				"title": "Edit"
+			},
+			{
+				"command": "remixPluginMngr.deleteEntry",
+				"title": "Delete"
 			}
 		],
 		"viewsContainers": {
@@ -25,7 +39,7 @@
 				{
 					"id": "remix-plugin-mngr",
 					"title": "Remix Plugin manager",
-					"icon": "assets/remixIcon.svg"
+					"icon": "assets/remixplugin.svg"
 				}
 			]
 		},
